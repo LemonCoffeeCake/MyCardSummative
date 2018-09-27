@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/SorryView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="48sp"
+        android:textAlignment="center"
+        android:text="Sorry I burned down your village."
+        android:fontFamily="serif"/>
+    <TextView
+        android:id="@+id/HereView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/CopyrightView"
+        android:textSize="48sp"
+        android:textAlignment="center"
+        android:text="Here's some gold."
+        android:fontFamily="casual"/>
+    <TextView
+        android:id="@+id/CopyrightView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:text="Image copyright Wizards of The Coast"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SorryView"
+        android:layout_above="@id/HereView"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/reparations"
+        />
+
+</RelativeLayout>
